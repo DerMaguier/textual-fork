@@ -203,7 +203,7 @@ class Canvas:
             A range object.
         """
         return range(
-            clamp(start, 0, self._height),
+            clamp(start, 1, self._height),
             clamp(end, 0, self._height),
         )
 
