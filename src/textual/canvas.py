@@ -61,7 +61,7 @@ class HorizontalLine(Primitive):
 
     def render(self, canvas: Canvas) -> None:
         x, y = self.origin
-        if y < 0 or y > canvas.height - 1:
+        if y < 1 or y > canvas.height - 2:
             return
         box = canvas.box
         box_line = box[y]
